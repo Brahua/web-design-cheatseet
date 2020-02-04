@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url('img/eight_horns.png');
+	font-family: Arial;
+}
+.content {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.content header {
+	width: 100%;
+	background-color: #4484AC;
+	color: #fff;
+}
+.content header nav {
+	/* display: flex;
+	justify-content: center; */
+}
+.content header nav ul{
+	list-style: none;
+}
+.content header nav ul li{
+	display: inline-block;
+}
+.content header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 20px;
+}
+
+
+.content .main {
+	width: 70%;
+	float: left;
+}
+.content .main .imagen {
+	width: 100%;
+}
+.content .main img {
+	vertical-align: top;
+	width: 100%;
+}
+.content .main .posts {
+	width: 100%;
+	padding: 30px;
+	background-color: #FFFFE0;
+}
+.content .main .posts article p{
+	font-size: 17px;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+.titulo{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+.content aside {
+	width: 30%;
+	float: left;
+	background-color: #E0FFFF;
+	padding: 20px;
+}
+.content aside .block {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.content aside .block h1 {
+	border-bottom: 2px solid #4484AC;
+}
+.content aside .block ul {
+	list-style: none;
+}
+.content aside .block ul li {
+	padding-bottom: 7px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #616161;
+}
+.content aside .block ul li a {
+	text-decoration: none;
+	color: #000;
+}
+.content aside .block p {
+	line-height: 25px;
+}
+
+.content footer{
+	width: 70%;
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	overflow: hidden;
+}
+.content footer p{
+	font-size: 17px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.content .main, .content aside, .content footer {
+		width: 100%;
+	}
+}

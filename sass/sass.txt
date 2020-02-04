@@ -1,0 +1,8 @@
+Para instalar Sass por la consola:
+1. Instalar ruby
+2. Iniciar la consola de Start command with Ruby
+3. Ejecutar gem install sass
+
+Para compilar archivos sass a css con la consola:
+- sass nombre_archivo.sass:nombre_archivo.css 
+- sass --watch nombre_archivo.sass:nombre_archivo.css 

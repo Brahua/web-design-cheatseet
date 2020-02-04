@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validando formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+	<div class="content">
+		<form action="" id="form">
+			<div class="form">
+				<input type="text" class="input-simple" name="nombre" id="nombre" placeholder="Nombres">
+				<input type="email" class="input-simple" name="email" id="email" placeholder="Correo">
+
+				<div class="sexo">
+					<input type="radio" name="sexo" value="hombre" id="hombre">
+					<label for="hombre">Hombre</label>
+					<input type="radio" name="sexo" value="mujer" id="mujer">	
+					<label for="mujer">Mujer</label>
+				</div>
+				<div class="terminos">
+					<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos">Terminos y Condiciones</label>
+				</div>
+				<ul class="error" id="error"></ul>
+			</div>
+			<input type="submit" value="Registrarse">
+		</form>
+	</div>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
