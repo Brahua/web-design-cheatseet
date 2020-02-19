@@ -11,9 +11,15 @@
 @keyframes movimiento {
 	/*from{transform:translate(0px);}
 	to{transform:translate(500px);}*/
-	0%{transform:translate(0px);}
-	50%{transform:translate(500px);}
-	100%{transform:translate(0px);}
+	0%{transform:translate(0px) scale(1, 1) rotate(0deg);}
+	25%{transform:translate(400px) scale(1, 1) rotate(45deg);}
+	50%{transform:translate(700px) scale(1, 1) rotate(90deg);}
+	75%{transform:translate(400px) scale(1, 1) rotate(45deg);}
+	100%{transform:translate(0px) scale(1, 1) rotate(0deg);}
+
+	/*0%{transform:translate(100px) scale(1, 1) rotate(20deg);}
+	50%{transform:translate(200px) scale(1, 1) rotate(45deg);}
+	100%{transform:translate(300px) scale(1, 1) rotate(90deg);}*/
 }
 
 .caja {
@@ -22,7 +28,8 @@
 	background: #9eb3c2;
 /*	animation-name:movimiento;
 	animation-duration:5s;
-	animation-iteration-count:infinite; puede ser un numero*/
-
-	animation:movimiento 10s ease infinite;
+	animation-iteration-count:infinite; puede ser un numero
+	animation-fill-mode: both;*/
+	
+	animation:movimiento 5s ease infinite;
 }

@@ -25,9 +25,9 @@ body {
 
 .posicionada {
 	background: #6695e8;
-	/*position: absolute;
-	top:;
-	rigth:;*/
+	/*position: relative;
+	top: 20px;
+	right: 60px;*/
 }
 
 /* 
