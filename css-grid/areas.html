@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: grid;
+            grid-template: 25% 50% 25% / 30% 70%;
+            gap: 10px;
+            height: 100vh;
+            grid-template-areas: "header header"
+                "left contenido"
+                "footer footer";
+        }
+
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .item:nth-of-type(4) {
+            background: blue;
+            overflow: auto;
+            /*display: subgrid;*/
+            /*display: inline-grid;*/
+            display: grid;
+            grid-template: 50px 50px 50px / 200px 200px 200px;
+        }
+
+        .item .item {
+            background: yellow;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .contenido {
+            grid-area: contenido;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="item header">contenido #1</div>
+        <div class="item left">contenido #2</div>
+        <div class="item contenido">contenido #3</div>
+        <div class="item footer">contenido #3</div>
+
+    </section>
+</body>
+
+</html>
