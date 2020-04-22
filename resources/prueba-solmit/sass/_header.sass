@@ -1,0 +1,70 @@
+header
+	width: 100%
+	padding: 5px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding-bottom: 10px
+	margin-bottom: 10px
+	border-bottom: 2px solid $celeste
+
+	.icons
+		width: 30%
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+		i
+			width: 20%
+			font-size: 30px
+		p
+			width: 100%
+			font-size: 20px
+			margin: 10px 0px
+			letter-spacing: 3px
+			font-weight: 700
+	.btn
+		display: none
+		color: $celeste
+		text-decoration: none
+		font-size: 30px
+	nav
+		width: 40%
+		color: $celeste
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+
+		.phone
+			width: 100%
+			text-align: right
+			margin-bottom: 5px
+
+		ul
+			width: 100%
+			list-style: none
+			text-align: right
+
+			li
+				display: inline-block
+				margin: 3px 0px
+				padding: 5px
+				a
+					text-decoration: none
+					color: #000
+					font-weight: 700
+					transition: all .5s ease
+					&:hover
+						color: $celeste
+						border-bottom: 2px solid $celeste
+
+.headroom
+	will-change: transform
+	transition: transform 200ms linear
+
+.headroom--pinned
+	transform: translateY(0%)
+
+.headroom--unpinned
+	transform: translateY(-100%)
+
