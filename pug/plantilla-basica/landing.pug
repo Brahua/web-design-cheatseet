@@ -1,0 +1,23 @@
+extend componentes/plantilla.pug
+block contenido
+	section.intro
+		.intro__imagen: img(src="images/imagen.png", alt="imagen")
+		.intro__contenido
+			//- h2= titulo
+			h2 #{titulo}
+			//- p. -> con esto podemos colocar lineas con saltos de lineas
+			p
+				| Lorem, ipsum dolor sit amet consectetur adipisicing
+				| elit. Fugit deleniti nobis dolore praesentium vero,
+				| aspernatur hic assumenda voluptate enim. Perspiciatis 
+				| molestias temporibus, expedita nemo beatae sint 
+				| accusamus pariatur ex reprehenderit.
+				span Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+			a.boton Leer Mas
+	main.contenido
+		+caja('imagen.png', subtitulos[0], 'Lorem ipsum')
+		+caja('imagen.png', subtitulos[1], 'Lorem ipsum')
+		+caja('imagen.png', subtitulos[2], 'Lorem ipsum')
+	//- ul
+		each titulo in titulos
+			li=titulo
